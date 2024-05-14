@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<%- include('includes/_head.ejs') %>
+<body class='edit'>
+	<div class="wrapper">
+		<%- include('includes/_header.ejs') %>
+		<main class="page">
+			<div class="page__container container">
+				<form class='form' method='post' action='/add'>
+					<div class="mb-3">
+						<label class="form-label">Name</label>
+						<input type="text" class="form-control" name='title'>
+					</div>
+					<div class="mb-4">
+						<label class="form-label">Intensity</label>
+						<input type="text" class="form-control" name='intensity' value='Feeling Scale (1 - 10)'>
+					</div>
+					<div class="row gx-3">
+						<div class="col-6">
+							<button type="submit" class="btn btn-primary w-100">Add</button>
+						</div>
+						<div class="col-6">
+							<a href="/" class="btn btn-secondary w-100">Cancel</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</main>
+	</div>
+</body>
+</html>

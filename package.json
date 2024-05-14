@@ -1,0 +1,25 @@
+{
+  "name": "fitness-app",
+  "version": "1.0.0",
+  "description": "System organizacji treningów fitness",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "Node JS",
+    "Express",
+    "MVC"
+  ],
+  "author": "Pavlo Strelnykov",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  }
+}

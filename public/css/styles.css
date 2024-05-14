@@ -1,0 +1,196 @@
+body {
+	position: relative;
+}
+body.home::before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('../img/auth-bg-4.webp') center no-repeat;
+	background-size: cover;
+}
+body.training::before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('../img/auth-bg-2.jpeg') center no-repeat;
+	background-size: cover;
+}
+body.edit::before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('../img/auth-bg.jpeg') center no-repeat;
+	background-size: cover;
+}
+
+body::after {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgb(255, 255, 255);
+	background: linear-gradient(
+		-180deg,
+		rgba(0, 0, 0, 0.5) 0%,
+		rgba(0, 0, 0, 0.9) 61%
+	);
+	z-index: 2;
+}
+
+.header {
+	padding: 20px 0;
+}
+.header__logo {
+	font-size: 30px;
+	font-weight: 900;
+}
+.page__hi {
+	font-size: 50px;
+	line-height: 110%;
+	margin-top: 50px;
+	font-weight: 800;
+	margin-bottom: 70px;
+}
+.page__workout {
+}
+.workout {
+	background-color: rgba(255, 255, 255, 0);
+	border-radius: 30px;
+	padding: 20px;
+	box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+.workout__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+.workout__caption {
+	font-weight: 900;
+	font-size: 25px;
+}
+.workout__add {
+	width: 40px;
+	height: 40px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.3s ease 0s;
+}
+.workout__add:hover {
+	background-color: rgba(255, 255, 255);
+}
+.workout__add svg {
+	width: 20px;
+	height: 20px;
+}
+.workout__list {
+	padding: 0 !important;
+}
+
+.workout__list li{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	column-gap: 20px;
+}
+
+.workout__list li:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.workout__title {
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
+	border-radius: 20px;
+	width: 100%;
+	height: 100px;
+	background-color: rgba(255, 255, 255, 0.15);
+	transition: all 0.3s ease 0s;
+}
+
+.workout__delete{
+	width: 45px;
+	flex: 0 0 45px;
+	height: 45px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.5);
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	transition: all 0.2s ease 0s;
+}
+.workout__delete:hover{
+	background-color: #fff;
+}
+.workout__delete svg{
+	width: 20px;
+	height: 20px;
+}
+
+.accordion-item {
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 30px !important;
+	padding: 15px 15px;
+	transition: all 0.3s ease 0s;
+}
+.accordion-item:hover{
+	background-color: rgba(255, 255, 255, 0.2);
+}
+.accordion-item:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.accordion-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.accordion-button {
+	padding: 15px 0px;
+}
+
+.accordion-edit {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	flex: 0 0 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.8);
+	margin-left: 10px;
+}
+.accordion-edit svg {
+	width: 13px;
+	height: 13px;
+}
+
+.accordion-body {
+	padding-top: 20px;
+}
+
+.form {
+	padding: 30px;
+	border-radius: 40px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.form-control {
+	background-color: rgba(255, 255, 255, 0.2);
+}
